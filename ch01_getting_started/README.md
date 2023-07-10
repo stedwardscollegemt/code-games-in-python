@@ -54,4 +54,4 @@ Please follow this tutorial on the Blog to get set up at home.
 
 ## Tasks
 
-- [] #1
+- [ ] https://github.com/stedwardscollegemt/code-games-in-python/issues/1

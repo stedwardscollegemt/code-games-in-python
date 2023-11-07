@@ -1,5 +1,7 @@
 # Chapter 1 Getting Started
 
+![Python Gif](https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif | width=200)
+
 ## What is Python?
 
 We need to feed computer systems <b>algorithms</b> to perform different tasks. An algorithm is a <b>list of step-by-step instructions</b> which can be written in a <b>programming language</b>. 
@@ -17,7 +19,7 @@ Python is a <b>text-based programming language</b> and it has a <b>syntax</b> th
 
 What do you think this code snippet does?
 
-```
+```python
 if a == 2:
     print("Hi there!")
 else:
@@ -37,9 +39,15 @@ A <b>module</b> is a <b>bundle of code that can make it easier for us to complet
 - Time
 - Tkinter
 
-Which module did we `import` in the following code snippet?
+To install modules like Pygame Zero we use a python command:
 
 ```
+python -m pip install -U pgzero
+```
+
+And then, we use the keyword `import` to make use of the code bundle:
+
+```python
 import pgzrun
 
 def draw():
@@ -50,8 +58,9 @@ pgzrun.go()
 
 ## How can I get set up at home?
 
-Please follow this tutorial on the Blog to get set up at home.
+Please follow this tutorial on the blog to get set up at home.
 
 ## Tasks
 
-- [] #1
+- [] https://github.com/stedwardscollegemt/code-games-in-python/issues/1
+- [] https://github.com/stedwardscollegemt/code-games-in-python/issues/2

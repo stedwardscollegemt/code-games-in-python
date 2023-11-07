@@ -1,6 +1,6 @@
 # Chapter 1 Getting Started
 
-![Python Gif](https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif | width=200)
+![Python Gif](https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif)
 
 ## What is Python?
 
@@ -62,5 +62,5 @@ Please follow this tutorial on the blog to get set up at home.
 
 ## Tasks
 
-- [] https://github.com/stedwardscollegemt/code-games-in-python/issues/1
-- [] https://github.com/stedwardscollegemt/code-games-in-python/issues/2
+- [ ] https://github.com/stedwardscollegemt/code-games-in-python/issues/1
+- [ ] https://github.com/stedwardscollegemt/code-games-in-python/issues/2

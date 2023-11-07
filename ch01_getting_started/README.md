@@ -62,5 +62,5 @@ Please follow this tutorial on the blog to get set up at home.
 
 ## Tasks
 
-- [ ] https://github.com/stedwardscollegemt/code-games-in-python/issues/1
-- [ ] https://github.com/stedwardscollegemt/code-games-in-python/issues/2
+- [ ] Write your first program https://github.com/stedwardscollegemt/code-games-in-python/issues/1
+- [ ] Help the turtle find its way to the apple https://github.com/stedwardscollegemt/code-games-in-python/issues/2

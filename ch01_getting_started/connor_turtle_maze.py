@@ -1,6 +1,8 @@
+# author: Connor Year 10
+
 from turtle import *
 
-#Set the speed(credit to Leo Ling)
+# Set the speed(credit to Leo Ling)
 speed(3)
 
 # Directions

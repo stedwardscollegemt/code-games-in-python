@@ -18,21 +18,21 @@ def title():
 # create a variable called 'score' and give it a value of 0
 score = 0
 
-# todo: create a variable called 'bonus' and give it a value of 0
-# your code ...
+# create a variable called 'bonus' and give it a value of 0
+bonus = 0
 
 title()
 
-# todo: write up made up welcome messages for a space themed runner game using print()
-# your code ...
+# write up made up welcome messages for a space themed runner game using print()
+print("Are you ready to have the run of your life?")
 
-# todo: ask for user input by saying "Press any key to start game..."
-# your code ...
+# ask for user input by saying "Press any key to start game..."
+start = input("Press any key to start game...")
 
 print("Score: ", score)
 
-# todo: print a new line using backslash n like so "\n"
-# your code ...
+# print a new line using backslash n like so "\n"
+print("\n")
 
 
 

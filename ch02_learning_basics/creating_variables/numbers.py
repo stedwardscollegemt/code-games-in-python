@@ -18,17 +18,18 @@ def cherry():
 # create variable to store the number (integer) of points
 points = 670
 
-# todo: create a variable to store the number (integer) of bonus points and set it to 0
-# ... your code ...
+# create a variable to store the number (integer) of bonus points and set it to 0
+bonus_points = 0
 
-# todo: update the bonus variable to contain 25% of the points entered
-# ... your code ...
+# update the bonus variable to contain 25% of the points entered
+# we are using the int() function so that we force python to give back a whole number
+bonus_points = int(0.25 * points)
 
-# todo: update points value to reflect to correct amount of total points earned
-# ... your code ...
+# update points value to reflect to correct amount of total points earned
+points = points + bonus_points
 
-# todo: display the number of points e.g. "Points: 250" using the print()
-# ... your code ...
+# display the number of points e.g. "Points: 250" using the print()
+print("Points: ", points)
 
 # if the user got over 500 points they win a special cherry in the game
 if points > 500:

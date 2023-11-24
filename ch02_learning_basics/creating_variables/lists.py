@@ -13,8 +13,8 @@ def word_puzzle():
 
 # ------ algorithm steps section ----------------------------------------
 
-# todo: declare a list variable called all_words that contains words the player can find in the puzzle e.g., "BALL", and "BOYE"
-# your code...
+# declare a list variable called all_words that contains words the player can find in the puzzle e.g., "BALL", and "BOYE"
+all_words = ["SHOE", "HAT", "COW", "BELT", "CAT", "TOYS", "EAR", "BALL", "BATS", "BED", "BOY", "BIG", "MICE"]
 
 print("*** Weclome to Word Play ***")
 print("****************************")
@@ -22,17 +22,16 @@ print("")
 
 word_puzzle()
 
-# todo: display an instruction to the user e.g. "Can you find all the words?"
-# your code...
+# display an instruction to the user e.g. "Can you find all the words?"
+print("Can you find all the words?")
 
-# todo: ask the user to enter a word e.g., "Enter a word: "
-# your code...
+# ask the user to enter a word e.g., "Enter a word: "
+word = input("Enter a word: ")
 
-# todo: use the list function count() to see if the user input is a good guess, store it in a variable called hit
-# your code...
+# use the list function count() to see if the user input is a good guess, store it in a variable called hit
+hit = all_words.count(word)
 
-# todo: display the value of the hit variable
-# your code...
-
+# display the value of the hit variable
+print(hit)
 
 

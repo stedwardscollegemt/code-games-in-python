@@ -251,7 +251,7 @@ else:
 x is greater or equal to y
 </pre>
 
-## Multiple comparisons using logic gates
+### Multiple comparisons using logic gates
 
 To make multiple comparisons or ask more complex questions in one statement we use <b>logic gate operations</b> like `and`, `or` and `not`. 
 

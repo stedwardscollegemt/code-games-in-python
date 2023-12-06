@@ -3,7 +3,9 @@ import random
 
 # ------ define functions section ---------------------------------------
 def title():
-    print("title")
+    print("************************************")
+    print("***** ROCK | PAPER | SCISSORS  *****")
+    print("************************************")
 
 # ------ algorithm steps section ----------------------------------------
 title()
@@ -23,8 +25,9 @@ if player_one == player_two:
 if player_one == "rock" and player_two == "scissors":
     print("Rock breaks scissors. Player one wins!")
 
-# todo: player_one is paper and player_two is scissors
-# your code ...
+# player_one is paper and player_two is scissors
+if player_one == "paper" and player_two == "scissors":
+    print("Paper covers scissors. Player two wins!")
 
 # todo: can you complete more combinations?
 # your code ...

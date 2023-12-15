@@ -11,8 +11,19 @@ title()
 
 fizzbuzz = []
 
-# todo: loop between numbers 1 and 50 and append to the fizzbuzz list
-# your code...
+# loop between numbers 1 and 50 and append to the fizzbuzz list
+for number in range(1, 51):
+    fizzbuzz.append(number)
 
-# todo: loop through the fizzbuzz list and display elements
-# your code...
+# loop through the fizzbuzz list and display elements
+for number in fizzbuzz:
+    if number % 15 == 0:
+        # display "FizzBuzz!"
+        print("FizzBuzz!")
+    elif number % 5 == 0: 
+        # display: "Fizz!"
+        print("Fizz!")
+    elif number % 3 == 0:
+        print("Buzz!")
+    else:
+        print(number)

@@ -39,11 +39,11 @@ else:
     
 # ---- more than two branches example ------------------------------------
 if number % 15 == 0:
-    # todo: display "FizzBuzz!"
-    print("")
+    # display "FizzBuzz!"
+    print("FizzBuzz!")
 elif number % 5 == 0: 
-    # todo: display: "Fizz!"
-    print("")
+    # display: "Fizz!"
+    print("Fizz!")
 # todo else if number mod 3 == 0, then display "Buzz!"
 else:
     print(number)

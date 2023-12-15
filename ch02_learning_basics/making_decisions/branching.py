@@ -13,12 +13,15 @@ print("Let us play...")
 
 title()
 
-# todo: ask the user whether they know how to play this game
-# your code
+# ask the user whether they know how to play this game
+response = input("Do you know how to play this game? (yes/no) ")
 
 # ---- one branch example -----------------------------------------------
-# todo: if the user does not know how to play, display instructions or do a practice round
-
+# if the user does not know how to play, display instructions or do a practice round
+if response == 'no':
+    print("Imagine a list of instructions...")
+    print("Let's practice: 1, 2, Fizz!")
+    print("Notice that instead of 3, I said Fizz!")
 
 # get a random number between 1 and 50 from the user
 number_in = input("Enter a number between 1 and 50: ")
@@ -27,9 +30,13 @@ number_in = input("Enter a number between 1 and 50: ")
 number = random.randint(1, 50)
 
 # ---- two branches example ----------------------------------------------
-# todo: if not number_in.is_numeric(), display error message, game will continue with random number
-#       else, number = int(number_in)
-
+# if not number_in.is_numeric(), display error message, game will continue with random number
+# else, number = int(number_in)
+if not number_in.is_numeric():
+    print("Error, game will continue with a random number")
+else:
+    number = int(number_in)
+    
 # ---- more than two branches example ------------------------------------
 if number % 15 == 0:
     # todo: display "FizzBuzz!"

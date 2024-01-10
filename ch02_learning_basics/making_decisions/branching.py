@@ -44,7 +44,8 @@ if number % 15 == 0:
 elif number % 5 == 0: 
     # display: "Fizz!"
     print("Fizz!")
-# todo else if number mod 3 == 0, then display "Buzz!"
+elif number % 3 == 0:
+    print("Buzz!")
 else:
     print(number)
 

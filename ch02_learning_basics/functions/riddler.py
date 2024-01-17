@@ -21,6 +21,21 @@ for char in riddle:
     print(char, end="", flush=True)
     time.sleep(0.3)
 
-# todo: Give the user two chances to guess, for the second chance display the clue
+# Give the user two chances to guess, for the second chance display the clue
+chances = 2
+is_guessed = False
+while(chances > 0 and is_guessed == False):
+    print(f"You have {chances} chances to guess. Please type a guess:")
+    guess = input()
+    is_guessed = guess == answer
+    if is_guessed:
+        print("Wow, you are so smart! You beat the riddler.")
+        break
+    else:
+        chances = chances - 1
+        for char in clue:
+            print(char, end="", flush=True)
+            time.sleep(0.1)
 
-# todo: Display whether the user won or not, in which case the answer will be revealed
+if (not is_guessed):
+    print("The riddler has beat you! The answer was: ", answer)

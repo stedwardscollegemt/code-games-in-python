@@ -33,9 +33,10 @@ while(chances > 0 and is_guessed == False):
         break
     else:
         chances = chances - 1
-        for char in clue:
-            print(char, end="", flush=True)
-            time.sleep(0.1)
+        if chances == 1:
+            for char in clue:
+                print(char, end="", flush=True)
+                time.sleep(0.1)
 
 if (not is_guessed):
     print("The riddler has beat you! The answer was: ", answer)

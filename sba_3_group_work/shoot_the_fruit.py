@@ -45,6 +45,7 @@ def on_mouse_down(pos):
         current_round = current_round + 1
         if current_round >= max_rounds:
             game_over = True
+            screen_text = f"Good job you got {points} points" # this is a formatted string
         random_fruit = random.choice(fruits)
         place_fruit(random_fruit)
     else:

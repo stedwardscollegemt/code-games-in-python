@@ -335,4 +335,8 @@ You always must use an `elif` after an `if` and before an `else`.
 
 ## Playing With Loops 
 
+Computers are good at doing repetitive tasks without getting bored, unlike ourselves. Looping structures like `while` and `for` loops can be used to run the same block of code over and over again. 
+
+## Functions 
+
 

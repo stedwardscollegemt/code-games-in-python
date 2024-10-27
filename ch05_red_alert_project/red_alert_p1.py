@@ -1,6 +1,6 @@
 # ---- import modules ----------------------
 import pgzrun
-# TODO: import random module
+import random
 
 # ---- my global objects -------------------
 FONT_COLOR = (255, 255, 255)            # use white as the color of our text
@@ -8,22 +8,23 @@ WIDTH = 800                             # set width of the screen
 HEIGHT = 500                            # set height of the screen
 CENTER_X = WIDTH / 2                    # horizontal middle
 CENTER_Y = HEIGHT / 2                   # vertical middle
-# TODO: [new] tuple to store the CENTER of the screen
-# ... your code ...
+# [new] tuple to store the CENTER of the screen
+CENTER = (CENTER_X, CENTER_Y) # we cannot change data in a tuple
 FINAL_LEVEL = 6
 START_SPEED = 10
-# TODO: list variable called COLORS storing "blue" and "green"
-# ... your code ...
-# TODO: boolean variables for game_over and game_complete
-# ... your code ...
-# TODO: number variable for current_level and set it to 1
-# ... your code ...
+# list variable called COLORS storing "blue" and "green"
+COLORS = ["blue", "green"]
+# boolean variables for game_over and game_complete
+game_over = False
+game_complete = False
+# number variable for current_level and set it to 1
+current_level = 1
 stars = []                              # list of stars on screen
 animations = []                         # list of animations on screen
-# TODO: [new] dictionary storing messages as key, value pairs
+# dictionary storing messages as key, value pairs
 messages = {
-    "lose": "Try again.",
-    "win": "Great job."
+    "lose": "Howdy partner, try next time!",
+    "win": "Hey cowboy, you are a star!"
 }
 
 # ---- define functions --------------------

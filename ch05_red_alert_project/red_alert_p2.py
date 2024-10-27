@@ -56,11 +56,12 @@ def make_stars(number_of_extra_stars):
 # - We need to return a list of colors for our stars e.g., ["red", "blue", "blue", "green", "blue"]
 # - We will create a list with "red" and add random colours for the extra stars
 def get_colors_to_create(number_of_extra_stars):
-    # TODO: a list variable colors_to_create containing a string for the color "red"
-    # ... your code ...
+    # a list variable colors_to_create containing a string for the color "red"
+    colors_to_create = ["red"]
     # a for loop starting from 0 up to number_of_extra_stars
     for i in range(0, number_of_extra_stars):
-        # TODO: use the random module to choose green or blue from COLORS in a random_color variable
+        # use the random module to choose green or blue from COLORS in a random_color variable
+        random_color = random.choice(COLORS)
         colors_to_create.append(random_color)
     return colors_to_create
 
@@ -69,35 +70,39 @@ def get_colors_to_create(number_of_extra_stars):
 # - We will loop through all colors in colors_to_create
 def create_stars(colors_to_create):
     new_stars = []
-    # TODO: a for loop through every color in colors_to_create
-    # TODO: inside the loop, create the star and add it to new_stars[]
-    star = Actor(color + "_star")
-    new_stars.append(star)
+    # a for loop through every color in colors_to_create
+    # inside the loop, create the star and add it to new_stars[]
+    for color in colors_to_create:
+        star = Actor(color + "_star")
+        new_stars.append(star)
     return new_stars
 
 def layout_stars(stars_to_layout):
     global WIDTH
-    # TODO: calculate the number_of_gaps
-    # ... your code ....
-    # TODO: calculate the gap_size
-    # ... your code ...
-    # TODO: use the random module to shuffle the stars
-    # ... your code ...
+    # calculate the number_of_gaps
+    number_of_gaps = len(stars_to_layout) + 1
+    # calculate the gap_size
+    gap_size = WIDTH / number_of_gaps
+    # use the random module to shuffle the stars
+    random.shuffle(stars_to_layout)
     # update the star position
     for index, star in enumerate(stars_to_layout):
         new_x_pos = (index + 1) * gap_size
         star.x = new_x_pos
 
 def animate_stars(stars_to_animate):
-    # TODO: a for loop through every star in stars_to_animate
-    # ... your code ...
-    # TODO: the following lines of code should be inside the loop
-    duration = START_SPEED - current_level
-    star.anchor = ("center", "bottom")
-    animation = animate(star, duration=duration, on_finished=handle_game_over, y=HEIGHT)
-    animations.append(animation)
+    # a for loop through every star in stars_to_animate
+    for star in stars_to_animate:
+        # the following lines of code should be inside the loop
+        duration = START_SPEED - current_level
+        star.anchor = ("center", "bottom")
+        animation = animate(star, duration=duration, on_finished=handle_game_over, y=HEIGHT)
+        animations.append(animation)
 
-# TODO: a function handle_game_over() that sets the global game_over variable to True
+# a function handle_game_over() that sets the global game_over variable to True
+def handle_game_over():
+    global game_over
+    game_over = True
 
 # ---- main algorithm steps ----------------
 

@@ -92,7 +92,7 @@ def layout_stars(stars_to_layout):
 
 def animate_stars(stars_to_animate):
     # a for loop through every star in stars_to_animate
-    for star in stars_to_animate:
+    for star in fff:
         # the following lines of code should be inside the loop
         duration = START_SPEED - current_level
         star.anchor = ("center", "bottom")

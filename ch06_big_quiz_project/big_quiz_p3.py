@@ -107,12 +107,12 @@ def handle_game_over():
 
 def on_mouse_down(pos):
     global answer_boxes, next_question
-    # TODO: create an index variable and set it to 0
+    # TODO: create an answer_index variable and set it to 0
     # ... your code ...
 
     # TODO: loop through each answer_box
     #            if answer_box.collidepoint(pos) 
-    #                  if answer is correct
+    # TODO:            if answer_index is the correct answer
     #                  then correct_answer()
     #                  else handle_game_over()
     #            increase index by 1
